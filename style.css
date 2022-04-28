@@ -8,8 +8,14 @@ body {
     background-color: rgb(245, 245, 245);
 }
 
-main {
+#checkout-container {
     padding: 60px;
+    display: flex;
+    justify-content: center;
+}
+
+#form {
+    margin-right: 40px;
 }
 
 #form-title {
@@ -37,6 +43,25 @@ select:focus {
     box-shadow: 0px 1px 5px 4px rgba(11, 15, 241, 0.3);
 }
 
+
+input::placeholder {
+    position: relative;
+    color: blue;
+}
+
+input::placeholder::before {
+    content: '\f0e0 ';
+    position: absolute;
+}
+
+
+.email i {
+    position: absolute;
+    /* top: 0%; */
+    color: black;
+    font-size: 40px;
+}
+
 form div {
     margin-bottom: 20px;
 }
@@ -51,4 +76,74 @@ form input[type='submit'] {
     color: #fff;
     width: 50%;
     
+}
+
+/* Shopping Items */
+#shopping-card {
+    background-color: rgb(180, 193, 219);
+    padding: 30px;
+    border-radius: 5px;
+    align-self: flex-start;
+}
+
+.shopping-items {
+    margin-bottom: 60px;
+}
+
+.shopping-item {
+    display: flex;
+}
+
+.shopping-item > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.shopping-item:first-child {
+    margin-bottom: 20px;
+}
+
+img {
+    margin-right: 20px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+/* .item-info {
+    margin-bottom: 30px;
+} */
+
+.item-info p {
+    margin-bottom: 8px;
+}
+
+.price span:first-child {
+    color: rgba(235, 16, 82, 0.836);
+}
+
+.price span:first-child {
+    margin-right: 10px;
+}
+
+.quantity {
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sign {
+    background-color: blue;
+    padding: 2px 5px;
+}
+
+.pricing > div {
+    border-top: 1px solid black;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
