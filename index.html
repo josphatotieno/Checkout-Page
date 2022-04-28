@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Checkout Page</title>
+</head>
+<body>
+    <main id="checkout-container">
+        <section id="form">
+            <div id="form-title">
+                <h1>Checkout</h1>
+            </div>
+
+            <form action="">
+                <div class="contact-info">
+                    <p>Contact Information</p>
+                    <div>
+                        <label for="email">E-mail</label>
+                        <input type="email" name="email" id="email" placeholder="Enter your email...">
+                    </div>
+
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="tel" id="phone" placeholder="Enter your phone">
+                    </div>
+                </div>
+
+                <div class="shipping-address">
+                    <p>Shipping address</p>
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name...">
+                    </div>
+
+                    <div>
+                        <label for="address">Address</label>
+                        <input type="text" name="address" id="address" placeholder="Your address...">
+                    </div>
+
+                    <div>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id="city" placeholder="Your city...">
+                    </div>
+
+                    <div>
+                        <div>
+                            <label for="country">Country</label>
+                            <select name="country" id="country" placeholder="Your country...">
+                                <option value=""> Your country...</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Rwanda">Rwanda</option>
+                                <option value="Congo">Congo</option>
+                            </select>
+                        </div>
+    
+                        <div>
+                            <label for="country">Postal code</label>
+                            <input type="text" name="country" id="country" placeholder="Your postal code...">
+                        </div>
+    
+                    </div>
+                </div>
+
+                <div>
+                    <input type="checkbox" name="save" id="save">
+                    <label for="save">Save this information for next time</label>
+                </div>
+
+                <input type="submit" value="Continue">
+                
+            </form>
+        </section>
+    </main>
+    
+</body>
+</html>

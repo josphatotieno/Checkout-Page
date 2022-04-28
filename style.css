@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(245, 245, 245);
+}
+
+main {
+    padding: 60px;
+}
+
+#form-title {
+    margin-bottom: 40px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 11px;
+}
+
+
+input:not(input[type='checkbox']),
+select {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    transition: box-shadow .3s ease-in;
+}
+
+input:not(input[type='checkbox']):focus,
+select:focus {
+    box-shadow: 0px 1px 5px 4px rgba(11, 15, 241, 0.3);
+}
+
+form div {
+    margin-bottom: 20px;
+}
+
+form p {
+    margin-bottom: 13px;
+    font-weight: bold;
+}
+
+form input[type='submit'] {
+    background-color: blue;
+    color: #fff;
+    width: 50%;
+    
+}
