@@ -13,128 +13,156 @@
         
 
         <div id="checkout-container">
-            <section id="form">
-                <div id="form-title">
-                    <h1>Checkout</h1>
-                </div>
-
-                <form action="">
-                    <div class="contact-info">
-                        <p>Contact Information</p>
-                        <div class="email">
-                            <label for="email">E-mail</label>
-                            <div>
-                                <input type="email" name="email" id="email" placeholder="Enter your email...">
-                                <!-- <i class="fa fa-envelope"></i> -->
-                            </div>
-                        </div>
-    
-                        <div>
-                            <label for="phone">Phone</label>
-                            <input type="tel" name="tel" id="phone" placeholder="Enter your phone">
-                        </div>
-                    </div>
-    
-                    <div class="shipping-address">
-                        <p>Shipping address</p>
-                        <div>
-                            <label for="name">Full Name</label>
-                            <input type="text" name="name" id="name" placeholder="Enter your name...">
-                        </div>
-    
-                        <div>
-                            <label for="address">Address</label>
-                            <input type="text" name="address" id="address" placeholder="Your address...">
-                        </div>
-    
-                        <div>
-                            <label for="city">City</label>
-                            <input type="text" name="city" id="city" placeholder="Your city...">
-                        </div>
-    
-                        <div>
-                            <div>
-                                <label for="country">Country</label>
-                                <select name="country" id="country" placeholder="Your country...">
-                                    <option value=""> Your country...</option>
-                                    <option value="Kenya">Kenya</option>
-                                    <option value="Uganda">Uganda</option>
-                                    <option value="Rwanda">Rwanda</option>
-                                    <option value="Congo">Congo</option>
-                                </select>
+            <div class="checkout-title">
+                <h1>Checkout</h1>
+            </div>
+            
+            <div>
+                <section id="form">
+                    <form action="">
+                        <div class="contact-info">
+                            <p>Contact Information</p>
+                            <div class="email">
+                                <label for="email">E-mail</label>
+                                <div class="input-field">
+                                    <input type="email" name="email" id="email" placeholder="Enter your email...">
+                                    <i class="fa fa-envelope"></i>
+                                </div>
                             </div>
         
                             <div>
-                                <label for="country">Postal code</label>
-                                <input type="text" name="country" id="country" placeholder="Your postal code...">
+                                <label for="phone">Phone</label>
+                                <div class="input-field">
+                                    <input type="tel" name="tel" id="phone" placeholder="Enter your phone">
+                                    <i class="fa fa-phone"></i>
+                                </div>
+                                
+                            </div>
+                        </div>
+        
+                        <div class="shipping-address">
+                            <p>Shipping address</p>
+                            <div>
+                                <label for="name">Full Name</label>
+                                <div class="input-field">
+                                    <input type="text" name="name" id="name" placeholder="Enter your name...">
+                                    <i class="fa fa-user-circle"></i>
+                                </div>
+                                
                             </div>
         
+                            <div>
+                                <label for="address">Address</label>
+                                <div class="input-field">
+                                    <input type="text" name="address" id="address" placeholder="Your address...">
+                                    <i class="fa fa-home"></i>
+                                </div>
+                                
+                            </div>
+        
+                            <div>
+                                <label for="city">City</label>
+                                <div class="input-field">
+                                    <input type="text" name="city" id="city" placeholder="Your city...">
+                                    <i class="fa fa-city"></i>
+                                </div>
+                               
+                            </div>
+        
+                            <div>
+                                <div>
+                                    <label for="country">Country</label>
+                                    <div class="input-field">
+                                        <select name="country" id="country" placeholder="Your country...">
+                                            <option value=""> Your country...</option>
+                                            <option value="Kenya">Kenya</option>
+                                            <option value="Uganda">Uganda</option>
+                                            <option value="Rwanda">Rwanda</option>
+                                            <option value="Congo">Congo</option>
+                                        </select>
+                                        <i class="fa fa-globe"></i>
+                                    </div>
+                                    
+                                </div>
+            
+                                <div>
+                                    <label for="country">Postal code</label>
+    
+                                    <div class="input-field">
+                                        <input type="text" name="country" id="country" placeholder="Your postal code...">
+                                        <i class="fa fa-inbox"></i>
+                                    </div>
+                                    
+                                </div>
+            
+                            </div>
                         </div>
-                    </div>
-    
-                    <div>
-                        <input type="checkbox" name="save" id="save">
-                        <label for="save">Save this information for next time</label>
-                    </div>
-    
-                    <input type="submit" value="Continue">
-                    
-                </form>
-            </section>
-    
-            <section id="shopping-card">
-                <div class="shopping-items">
-                    <div class="shopping-item">
-                        <img src="photo1.png" alt="">
+        
                         <div>
-                            <div class="item-info">
-                                <p>Vintage Backbag</p>
-                                <div class="price">
-                                    <span>$59.00</span>
-                                    <span><s>$79.00</s></span>
+                            <input type="checkbox" name="save" id="save">
+                            <label for="save">Save this information for next time</label>
+                        </div>
+        
+                        <input type="submit" value="Continue">
+                        
+                    </form>
+                </section>
+        
+                <section id="shopping-card">
+                    <div class="shopping-items">
+                        <div class="shopping-item">
+                            <img src="photo1.png" alt="">
+                            <div>
+                                <div class="item-info">
+                                    <p>Vintage Backbag</p>
+                                    <div class="price">
+                                        <span>$59.00</span>
+                                        <span><s>$79.00</s></span>
+                                    </div>
+                                </div>
+        
+                                <div class="quantity">
+                                    <span class="sign">-</span>
+                                    <span>1</span>
+                                    <span class="sign">+</span>
                                 </div>
                             </div>
-    
-                            <div class="quantity">
-                                <span class="sign">-</span>
-                                <span>1</span>
-                                <span class="sign">+</span>
-                            </div>
                         </div>
-                    </div>
-    
-                    <div class="shopping-item">
-                        <img src="photo2.png" alt="">
-                        <div>
-                            <div class="item-info">
-                                <p>Levi Shoes</p>
-                                <div class="price">
-                                    <span>$79.00</span>
-                                    <span><s>$99.00</s></span>
+        
+                        <div class="shopping-item">
+                            <img src="photo2.png" alt="">
+                            <div>
+                                <div class="item-info">
+                                    <p>Levi Shoes</p>
+                                    <div class="price">
+                                        <span>$79.00</span>
+                                        <span><s>$99.00</s></span>
+                                    </div>
+                                </div>
+        
+                                <div class="quantity">
+                                    <span class="sign">-</span>
+                                    <span>1</span>
+                                    <span class="sign">+</span>
                                 </div>
                             </div>
-    
-                            <div class="quantity">
-                                <span class="sign">-</span>
-                                <span>1</span>
-                                <span class="sign">+</span>
-                            </div>
                         </div>
                     </div>
-                </div>
-    
-                <div class="pricing">
-                    <div class="shipping">
-                        <span>Shipping</span>
-                        <span>$29.00</span>
+        
+                    <div class="pricing">
+                        <div class="shipping">
+                            <span>Shipping</span>
+                            <span>$29.00</span>
+                        </div>
+                        
+                        <div class="total">
+                            <span>Total</span>
+                            <span>$167.00</span>
+                        </div>
                     </div>
-                    
-                    <div class="total">
-                        <span>Total</span>
-                        <span>$167.00</span>
-                    </div>
-                </div>
-            </section>
+                </section>
+            </div>
+            
         </div>
     </main>
 </body>

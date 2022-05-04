@@ -9,7 +9,10 @@ body {
 }
 
 #checkout-container {
-    padding: 60px;
+    padding: 60px 0;
+}
+
+#checkout-container > div {
     display: flex;
     justify-content: center;
 }
@@ -18,7 +21,7 @@ body {
     margin-right: 40px;
 }
 
-#form-title {
+.checkout-title {
     margin-bottom: 40px;
 }
 
@@ -27,16 +30,29 @@ label {
     margin-bottom: 11px;
 }
 
+.input-field {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.input-field i {
+    align-self: center;
+    margin-right: -7%;
+    font-size: 13px;
+    color: rgb(127, 129, 131);
+}
 
 input:not(input[type='checkbox']),
 select {
     border: none;
     outline: none;
     width: 100%;
-    padding: 10px;
+    padding: 10px 10px 10px 27px;
     border-radius: 5px;
     transition: box-shadow .3s ease-in;
 }
+
+
 
 input:not(input[type='checkbox']):focus,
 select:focus {
@@ -47,19 +63,7 @@ select:focus {
 input::placeholder {
     position: relative;
     color: blue;
-}
-
-input::placeholder::before {
-    content: '\f0e0 ';
-    position: absolute;
-}
-
-
-.email i {
-    position: absolute;
-    /* top: 0%; */
-    color: black;
-    font-size: 40px;
+    margin-left: 30px;
 }
 
 form div {
@@ -72,18 +76,21 @@ form p {
 }
 
 form input[type='submit'] {
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
     background-color: blue;
     color: #fff;
     width: 50%;
-    
 }
 
 /* Shopping Items */
 #shopping-card {
-    background-color: rgb(180, 193, 219);
+    background-color: rgb(230 232 235);
     padding: 30px;
     border-radius: 5px;
     align-self: flex-start;
+    box-shadow: 1px 3px 4px 4px rgb(0 0 0 / 12%);
 }
 
 .shopping-items {
@@ -146,4 +153,24 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    #form {
+        margin: 0;
+    }
+
+    #checkout-container > div {
+        flex-direction: column-reverse;
+        padding: 20px;
+    }
+
+    #shopping-card {
+        margin-bottom: 40px;
+        width: 100%;
+    }
+
+    input:not(input[type='checkbox']), select {
+        padding: 10px 10px 10px 10%;
+    }
 }
